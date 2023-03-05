@@ -1,0 +1,223 @@
+/*======================
+   01. Google fonts
+========================*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+/*======================
+   02. Basic css
+========================*/
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+i,
+ol,
+ul,
+li,
+form,
+label,
+footer,
+header,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 26px;
+	background: #25313C;
+	color: #ffffff;
+	font-family: 'Rubik', sans-serif;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+
+.product-wrapper {
+	 padding: 80px 0;
+}
+
+.product-img-box {
+	 position: relative;
+	 border-radius: 17px 0 15px 15px;
+	 border: 1px solid #DAE3EA;
+}
+
+.product-img-box p {
+	 padding: 11px 15px;
+	 background: #1DBF72;
+	 font-size: 14px;
+	 font-weight: 600;
+	 line-height: 17px;
+	 border-radius: 0 0 0 15px;
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+}
+
+.product-img-box p i {
+	margin-right: 5px;
+}
+
+.product-img-main-active .slick-arrow, .product-img-mini-active .slick-arrow {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: #FF2F6F;
+    border: transparent;
+    z-index: 9;
+    transform: translateY(-50%);
+}
+
+.product-img-main-active .slick-next,
+.product-img-mini-active .slick-next {
+    right: -25px;
+}
+
+.product-img-main-active .slick-prev,
+.product-img-mini-active .slick-prev {
+	left: -25px;
+}
+
+.product-img-mini-active .slick-slide img {
+	filter: grayscale(1);
+	border: 2px solid transparent;
+	cursor: pointer;
+	width: auto !important;
+   height: 120px;
+   object-fit: cover;
+   border-radius: 17px;
+}
+
+.product-img-mini-active .slick-current.slick-active.slick-center img {
+	border: 2px solid #1DBF72;
+	filter: grayscale(0);
+}
+
+.product-box {
+	margin-left: 20px;
+}
+
+.product-box h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.star-icon a {
+	font-size: 17px;
+	color: #FF2F6F;
+	margin-right: 5px;
+}
+
+.product-box p {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 21px;
+	color: #00FFB6;
+	margin-top: 15px;
+}
+
+.product-box p span {
+	margin-left: 10px;
+	color: #FF2F6F !important;
+	text-decoration: line-through;
+}
+
+.wishlet-bg {
+	 background: linear-gradient(90deg, #6416D3 44.27%, #B078FF 97.92%) !important;
+}
+
+.wishlet-bg:hover {
+	 background: linear-gradient(90deg, #B078FF 44.27%, #6416D3 97.92%) !important;
+}
+
+.product-button {
+	background: linear-gradient(116.2deg, #FF2F6F 30.26%, #8F41FF 85.45%);
+	border-radius: 100px;
+	display: inline-flex;
+	align-items: center;
+	color: #F6F6F6;
+	justify-content: center;
+	font-weight: 700;
+	transition: .3s;
+	text-transform: uppercase;
+	text-shadow: 0px 4px 4px rgb(0, 0, 0, 25%);
+	width: 220px;
+	height: 60px;
+}
+
+.product-button:hover {
+	background: linear-gradient(116.2deg, #8F41FF 30.26%,  #FF2F6F 85.45%);
+	color: #F6F6F6;
+}
+
+.product-button img {
+	margin-right: 10px;
+}
+
+.mt-30 {
+	margin-top: 20px;
+}
+
+.product-spinner .nice-number {
+   border: 1px solid #6D7D8B;
+   border-radius: 100px;
+}
+
+.product-spinner .nice-number button:first-child {
+   border-right: 1px solid rgba(246, 246, 246, 0.3);
+}
+
+.product-spinner .nice-number button:last-child {
+	border-left: 1px solid rgba(246, 246, 246, 0.3);
+}
+
+.product-spinner .nice-number button,
+.product-spinner .nice-number input {
+	background: none;
+	border: none;
+	color: #ffffff;
+	font-size: 14px;
+	padding: 15px 31px;
+}
+
+.social-icon a {
+    font-size: 22px;
+    color: #ffffff;
+    margin: 35px 20px 0 0;
+    display: inline-block;
+    transition: .3s;
+}
+
+.social-icon a:hover {
+	color: #FF2F6F;	 
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="app, landing, corporate, Creative, Html Template, Template">
+    <meta name="author" content="web-themes">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- title -->
+    <title>Product details page</title>
+
+    <!-- favicon -->
+    <!-- <link href="img/favicon.png" type="image/png" rel="icon"> -->
+
+    <!-- all css here -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.nice-number.css" rel="stylesheet" type="text/css" />
+    <link href="css/slick.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+    <!-- product detail area start -->
+    <div class="product-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-img-main-active">
+                        <div class="product-img-box">
+                            <p><i class="far fa-check-circle"></i>In stock</p>
+                            <img class="img-fluid" src="img/prduct_main_image.png" alt="">
+                        </div>
+                        <div class="product-img-box">
+                            <p><i class="far fa-check-circle"></i>In stock</p>
+                            <img class="img-fluid" src="img/prduct_main_image.png" alt="">
+                        </div>
+                        <div class="product-img-box">
+                            <p><i class="far fa-check-circle"></i>In stock</p>
+                            <img class="img-fluid" src="img/prduct_main_image.png" alt="">
+                        </div>
+                        <div class="product-img-box">
+                            <p><i class="far fa-check-circle"></i>In stock</p>
+                            <img class="img-fluid" src="img/prduct_main_image.png" alt="">
+                        </div>
+                    </div>
+                    <div class="product-img-mini-active">
+                        <img class="img-fluid" src="img/product_main_smallimg.png" alt="">
+                        <img class="img-fluid" src="img/product_main_smallimg.png" alt="">
+                        <img class="img-fluid" src="img/product_main_smallimg.png" alt="">
+                        <img class="img-fluid" src="img/product_main_smallimg.png" alt="">
+                        <img class="img-fluid" src="img/product_main_smallimg.png" alt="">
+                        <img class="img-fluid" src="img/product_main_smallimg.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-box">
+                        <h2>Chair Foster Grey</h2>
+                        <div class="star-icon">
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                        </div>
+                        <p>€25,00 <span>€27,00</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="product-spinner mt-30">
+                                    <input type="number" value="2">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <a class="product-button mt-30" href="#"><img class="img-fluid" src="img/product_card_icon.png" alt=""> Add to cart</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a class="product-button wishlet-bg mt-30" href="#"><img class="img-fluid" src="img/product_wishlet_icon.png" alt="">Add to wishlet</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a class="product-button mt-30" href="#"><img class="img-fluid" src="img/product_book_icon.png" alt=""> Book now</a>
+                            </div>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <span class="mt-30 d-inline-block">The western society is too much money driven, like many people lose the essence of life. Many companies and individuals are focusing on material in stead of experience. However opposite this, there is a large.The western society is too much money driven, like many people lose the essence of life. Many companies and individuals are focusing on material in stead of experience. However opposite this, there is a large.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- product detail area end -->
+    
+    <!-- all js here -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-number.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        
+         $('.product-img-main-active').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          asNavFor: '.product-img-mini-active',
+          arrows: true,
+          autoplaySpeed: 3000,
+          prevArrow:'<button type="button" class="slick-prev"><i class="far fa-arrow-left"></i></button>',
+          nextArrow:'<button type="button" class="slick-next"><i class="far fa-arrow-right"></i></button>',
+        });
+        $('.product-img-mini-active').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          asNavFor: '.product-img-main-active',
+          dots: false,
+          centerMode: true,
+          focusOnSelect: true,
+          arrows: true,
+          prevArrow:'<button type="button" class="slick-prev"><i class="far fa-arrow-left"></i></button>',
+          nextArrow:'<button type="button" class="slick-next"><i class="far fa-arrow-right"></i></button>',
+        });
+
+        // product counter start
+        $(function(){
+            $('.product-spinner input[type="number"]').niceNumber();
+         });
+
+
+    </script>
+</body>
+</html>
